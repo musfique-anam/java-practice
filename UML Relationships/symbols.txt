@@ -1,0 +1,9 @@
+1. Inheritance:   --------|>
+
+2. Association:   --------
+
+3. Aggregation:   ◇--------
+
+4. Composition:   ◆--------
+
+5. Dependency:    - - - - >
