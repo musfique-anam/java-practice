@@ -1,18 +1,19 @@
 // Dependency (Temporary Use)
 
 class Document {
+    String text = "Hello Java";
 }
 
 class Printer {
-    void print(Document d) {   // used only in method
-        System.out.println("Printing document");
+    void print(Document d) {   // dependency
+        System.out.println(d.text);
     }
 }
 
 public class Test5 {
     public static void main(String[] args) {
-        Document doc = new Document();
-        Printer p = new Printer();
-        p.print(doc);
+        Document doc = new Document();  // create document
+        Printer p = new Printer();      // create printer
+        p.print(doc);                   // printer uses document
     }
 }
